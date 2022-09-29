@@ -17,6 +17,11 @@ vertices = [
   { name: "kid2", distance: null, predecessor: null },
 ];
 
+/*
+
+Creates a neat little list of objects with their respective neighbors
+
+*/
 let locations = [];
 vertices.forEach((vertex) => {
   let node;
@@ -59,6 +64,7 @@ function bfs(start, end) {
   }
 }
 bfs(locations[3], "kid1");
+
 /*
 function findNode(nodeName, vertices) {
   return vertices.find((vertex) => vertex.name == nodeName);
